@@ -1,0 +1,65 @@
+#root {
+  float: center;
+  margin-right: 400px;
+  margin-left: 300px;
+}
+.wrapper {
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.content {
+  float: left;
+  width: 60%;
+  background-color: #CCF;
+}
+
+.sidebar {
+  float: right;
+  width: 40%;
+  background-color: white;
+}
+
+.cleared {
+  clear: both;
+}
+
+.container{
+  float: center;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+button{
+  width: 60px;
+  padding: 2px 2px 2px 2px;
+}
+
+.action-header {
+  float: center;
+  padding-left: 50px;
+}
+
+.board{
+  padding: 20px;
+}
+
+#simple-board, td {
+  align-content: center;
+  background-color: white;
+  font-color: white;
+  border: 1px solid black;
+}
+
+#base td{
+  border: none;
+}
+
+.button-action {
+  padding: 20px 20px 20px 20px;
+}
+
+img{
+  float: center;
+  padding-left: 10px;
+}
