@@ -3,7 +3,6 @@ import charright from './charright.png';
 import charleft from './charleft.png';
 import charup from './charup.png'
 import chardown from './chardown.png'
-import './App.css';
 import './Robot.css';
 
 var datas = []
@@ -31,6 +30,7 @@ var Robot = React.createClass ({
     datas.push(data)
     },
   move: function(){
+    // function to move the robbot
     if(this.state.init_place === true){
       if (this.state.right === true && this.state.x < this.state.max_x){
         this.setState({x : this.state.x + 1});
