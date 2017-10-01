@@ -117,19 +117,19 @@ var Robot = React.createClass ({
         if (this.state.init_place === true && this.state.y === i && this.state.x === idx){
           if (this.state.left === true){
             cell.push(<td key={cellID} id={cellID} width="60px" height="50px">
-              <img src={charleft} width="50px" height="40px" alt=''/></td>)
+              <img src={charleft} width="40px" height="40px" alt=''/></td>)
           }
           if (this.state.right === true) {
             cell.push(<td key={cellID} id={cellID} width="60px" height="50px">
-              <img src={charright} width="50px" height="40px" alt=''/></td>)
+              <img src={charright} width="40px" height="40px" alt=''/></td>)
           }
           if (this.state.up === true){
             cell.push(<td key={cellID} id={cellID} width="60px" height="50px">
-              <img src={charup} width="50px" height="40px" alt=''/></td>)
+              <img src={charup} width="40px" height="40px" alt=''/></td>)
           }
           if (this.state.down === true){
             cell.push(<td key={cellID} id={cellID} width="60px" height="50px">
-              <img src={chardown} width="50px" height="40px" alt=''/></td>)
+              <img src={chardown} width="40px" height="40px" alt=''/></td>)
           }
         }
         else {
