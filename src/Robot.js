@@ -26,7 +26,7 @@ var Robot = React.createClass ({
     this.setState({init_place: true});
     this.setState({x: 0, y:0, left: false, right: false, down: false, up: true, head: 'north'});
     datas = []
-    let data = {"action": "place", "value": '('+this.state.x+','+this.state.y+', north'+')', "creator": "oktaviani.febby@gmail.com"}
+    let data = {"action": "place", "value": '( 0, 0, north)', "creator": "oktaviani.febby@gmail.com"}
     datas.push(data)
     },
   move: function(){
@@ -100,8 +100,7 @@ var Robot = React.createClass ({
       },
       body: JSON.stringify(datas),
     })
-    // .then(res => res.json())
-    // .then(res => {console.log(res.status)})
+    .then(res => {console.log(res.status)})
   },
   render: function(){
     let rows = [];
