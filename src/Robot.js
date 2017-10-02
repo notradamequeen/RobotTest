@@ -32,13 +32,13 @@ var Robot = React.createClass ({
   move: function(){
     // function to move the robbot
     if(this.state.init_place === true){
-      if (this.state.right === true && this.state.x < this.state.max_x){
+      if (this.state.right === true && this.state.x < this.state.max_x - 1){
         this.setState({x : this.state.x + 1});
         this.setState({click : this.state.click_x + 1});
         console.log('x' + this.state.x);
         console.log('y' + this.state.y);
       }
-      if (this.state.up === true && this.state.y < this.state.max_y){
+      if (this.state.up === true && this.state.y < this.state.max_y - 1){
         this.setState({y : this.state.y + 1});
         this.setState({click_y : this.state.click_y + 1});
         console.log('x' + this.state.x);
